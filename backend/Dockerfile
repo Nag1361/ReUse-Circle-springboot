@@ -5,9 +5,7 @@ WORKDIR /app
 
 COPY . .
 
-RUN chmod +x mvnw
-
-RUN ./mvnw -B -DskipTests clean package
+RUN mvn -B -DskipTests clean package
 
 FROM eclipse-temurin:17-jre
 
