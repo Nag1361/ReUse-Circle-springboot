@@ -1,0 +1,20 @@
+# Credentials and local configuration
+.env
+.env.*
+!.env.example
+application-local.properties
+**/application-local.properties
+# Build output
+node_modules/
+dist/
+target/
+*.log
+# Editors and OS
+.idea/
+.vscode/
+*.iml
+.DS_Store
+Thumbs.db
+
+# Downloaded project-local runtimes
+.tools/
